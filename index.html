@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medifit Header</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+      <div class="containerr">
+        <header class="header">
+          <div class="logo-section">
+       <!---- <a href="#hero" >-->
+          <img src="images/logo.jpg.svg" alt="Medifit logo" class="logo" />
+          <h1 class="brand-name">Medifit</h1>
+        <!--</a>-->
+</div>
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#Home" class="nav-link"> Home    </a></li>
+            <li><a href="shop.html" class="nav-link1"> Shop   </a></li>
+            <li><a href="about.html" class="nav-link2"> About </a></li>
+            <li><a href="#Contact" class="nav-link3"> Contact </a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <img src="images/search.svg" alt="Search" class="search-icon" onclick="toggleSearch()" />
+          <div class="cart-container">
+              <img src="images/cart.svg" alt="Cart" class="cart-icon" onclick="toggleCart()" />
+              <span class="cart-badge">0</span>
+          </div>
+      </div>
+  </header>
+        
+
+    <section class="hero-section">
+      <div class="hero-content">
+          <h2 class="hero-title">Your trusted </br>care now </br> and always</h2>
+          <p class="hero-description">For the best results, align your health needs with your medication plan.</p>
+          <button class="cta-button" onclick="shopNow()">Shop now</button>
+   </div>
+   <div class="hero-visual">
+    <div class="hero-circle"></div>
+    <img src="images/Group 220.svg"/>
+</section>
+
+<section class="category-section">
+  <h2 class="section-title">Shop by Category</h2>
+  
+  <div class="category-grid">
+      <div class="category-card" onclick="navigateToCategory('medicine')">
+          <div class="category-icon-wrapper">
+              <div class="category-icon-bg">
+                  <img src="images/capsule.svg" alt="Medicine" class="category-icon" />
+              </div>
+          </div>
+          <h3 class="category-name">Medicine</h3>
+          <p class="category-count">32 Items</p>
+      </div>
+      
+      <div class="category-card" onclick="navigateToCategory('healthcare')">
+          <div class="category-icon-wrapper">
+              <div class="category-icon-bg">
+                  <img src="images/Healthcare.svg" alt="Health care" class="category-icon" />
+              </div>
+          </div>
+          <h3 class="category-name">Health care</h3>
+          <p class="category-count">20 Items</p>
+      </div>
+      
+      <div class="category-card" onclick="navigateToCategory('beauty')">
+          <div class="category-icon-wrapper">
+              <div class="category-icon-bg">
+                  <img src="images/Beautycare.svg" alt="Beauty care" class="category-icon" />
+              </div>
+          </div>
+          <h3 class="category-name">Beauty care</h3>
+          <p class="category-count">30 Items</p>
+      </div>
+       
+      <div class="category-card" onclick="navigateToCategory('fitness')">
+          <div class="category-icon-wrapper">
+              <div class="category-icon-bg">
+                  <img src="images/Fitness.svg" alt="Fitness" class="category-icon" />
+              </div>
+          </div>
+          <h3 class="category-name">Fitness</h3>
+          <p class="category-count">35 Items</p>
+      </div>
+      
+      <div class="category-card" onclick="navigateToCategory('lab-equipment')">
+          <div class="category-icon-wrapper">
+              <div class="category-icon-bg">
+                  <img src="images/Labequibment.svg" alt="Lab equipment" class="category-icon" />
+              </div>
+          </div>
+          <h3 class="category-name">Lab equipment</h3>
+          <p class="category-count">25 Items</p>
+      </div>
+      
+      <div class="category-card" onclick="navigateToCategory('medkits')">
+          <div class="category-icon-wrapper">
+              <div class="category-icon-bg">
+                  <img src="images/Medkts.svg" alt="Medkits" class="category-icon" />
+              </div>
+          </div>
+          <h3 class="category-name">Medkits</h3>
+          <p class="category-count">25 Items</p>
+      </div>
+  </div>
+</section>
+
+
+
+<section class="custom-rectangle-section">
+  <div class="rectangle-row">
+    <div class="rectangle rectangle-1">
+      <div class="text-content">
+        <div class="badge">Hot deal</div>
+        <div class="rect-title">Hand sanitizer <br>collection</div>
+        <a href="#" class="shop-now">🛒 Shop now</a>
+      </div>
+      <div class="image-wrapper">
+      <a href="#">  <img src="images/handsanitizer.svg" alt="Sanitizer" /></a>
+      </div>
+    </div>
+
+    <div class="rectangle rectangle-2">
+      <div class="text-content">
+        <div class="badge">Hot deal</div>
+        <div class="rect-title">Face wash sale <br> collection</div>
+        <a href="#" class="shop-now">👁️ Discover now</a>
+      </div>
+      <div class="image-wrapper2">
+        <a href="#"><img src="images/wash.svg" alt="Face Wash" /></a>
+      </div>
+    </div>
+
+    <div class="rectangle rectangle-3">
+      <div class="text-content">
+        <div class="badge">Hot deal</div>
+        <div class="rect-title">Facial mask deals <br>save up to 50%</div>
+        <a href="#" class="shop-now">👁️ Discover now</a>
+      </div>
+      <div class="image-wrapper3">
+     <a href="#">  <img src="images/mask.svg" alt="Face Mask" /></a> 
+      </div>
+    </div>
+  </div>
+</section>
+<section class="latest-health-section">
+  <h2 class="section-title">Latest Health Products</h2>
+  <div class="latest-product-grid">
+    
+    <div class="product-card">
+      <div class="badge">New</div>
+      <img src="images/microscope.svg" alt="microscope" class="product-image" />
+     
+      <a href="#" class="shop-now">
+        <img src="images/cart-shopping-fast.svg" alt="Shop Icon" width="16" height="16" style="vertical-align: middle; margin-right: 5px;">
+        Shop now
+      </a> <h3 class="product-title">Microscope</h3>
+      <p class="product-price">$45.00 USD</p>
+      
+    </div>
+
+    <div class="product-card">
+      <div class="badge">New</div>
+      <img src="images/sleek-pulse-oximeter-with-soft-ambient-lighting.svg" alt="Immunity Booster" class="product-image" />
+      <h3 class="product-title">Pulse Oximeter</h3>
+      <p class="product-price">$19.00 USD  $25.00 USD</p>
+     
+    </div>
+
+    <div class="product-card">
+     
+      <img src="images/Group 161.svg" alt="Face Mask Pack" class="product-image" />
+      <h3 class="product-title">Vitamin Serum</h3>
+      <p class="product-price"> $20.00 USD<s>$30.00 USD</s> </p>
+    
+    </div>
+
+    <div class="product-card">
+      <div class="badge">New</div>
+    <div class="high">  
+      <img src="images/high protein.svg" alt="Herbal Syrup" class="product-image" />
+      <h3 class="product-title">High protein</h3>
+      <p class="product-price">$50.00 USD</p>
+    </div>
+    </div>
+</div>
+  </div>
+  <section class="long-feature-rectangle">
+    <div class="long-feature-item">
+      <img src="images/Vector.svg" alt="Replacement" class="feature-icon" />
+      <span>30 Days Replacement Warranty</span>
+    </div>
+    
+    <div class="long-feature-item">
+      <img src="images/shield-check.svg" alt="Exchange" class="feature-icon" />
+      <span>Exchange Policy</span>
+    </div>
+    <div class="long-feature-item">
+      <img src="images/arrow-left-arrow-right (1).svg" alt="Secure Payment" class="feature-icon" />
+      <span>   Secure Payment</span>
+      
+    </div>
+  </section>
+  <section class="store-collection">
+    <h2 class="section-title">Explore Our Store Collection</h2>
+    <div class="product-grid">
+      <div class="product-box">
+        <img src="images/Group 192.svg" alt="B12" />
+        <a href="#" class="shop-now">🛒 Shop now</a>
+        <h3 class="title">B12 medicine</h3>
+        <p class="price">$10.00 <span class="old-price">$15.00</span></p>
+      </div>
+      <div class="product-box">
+        <img src="images/tonometer.svg"  alt="Tonometer" />
+        <h3 class="title">Tonometer</h3>
+        <p class="price">$100.00</p>
+      </div>
+      <div class="product-box">
+        <img src="images/ecg.svg" alt="ECG" />
+        <h3 class="title">ECG cardiograph</h3>
+        <p class="price">$250.00 <span class="old-price">$299.00</span></p>
+      </div>
+      <div class="product-box">
+        <img src="images/bloodglu.svg" alt="Glucose" />
+        <h3 class="title">Blood glucose meter</h3>
+        <p class="price">$15.00</p>
+      </div>
+  
+      <div class="product-box">
+        <img src="images/lab gloves.svg" alt="Gloves" />
+        <h3 class="title">Lab hand gloves</h3>
+        <p class="price">$15.00 <span class="old-price">$20.00</span></p>
+      </div>
+      <div class="product-box">
+        <img src="images/stethoscope.svg" alt="Stethoscope" />
+        <h3 class="title">Stethoscope</h3>
+        <p class="price">$19.00 <span class="old-price">$25.00</span></p>
+      </div>
+      <div class="product-box">
+        <img src="images/inhaller.svg" alt="Inhaler" />
+        <h3 class="title">Inhaler pressure drop</h3>
+        <p class="price">$30.00</p>
+      </div>
+      <div class="product-box">
+        <img src="images/mutivittamin.svg" alt="Multi vitamin" />
+        <h3 class="title">Multi vitamin</h3>
+        <p class="price">$10.00</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <div class="newsletter-image">
+      <img src="images/young-woman-taking-dietary-supplement-vitamin-omega-3-health-fish-oil-softgel-vitamin-d-vitamin-c-support-immunity-disease-prevention 1.svg" alt="women" />
+    </div>
+    <div class="newsletter-content">
+      <p class="small-text">Join our newsletter</p>
+      <h2 class="headline">Sign Up for an Instant<br />15% Discount</h2>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter Email" required />
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section>
+  <img src="images/testomonial.svg"/>
+</section>
+
+<section class="insta">
+  <img src="images/instagram.svg"/>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4><strong> Pages</strong></h4>
+     
+      <ul>
+        <li><strong>Home</strong></li>
+        <li>Shop</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blog</li>
+        <li>Privacy policy</li>
+        <li>FAQs</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4><strong>Utility</strong></h4>
+      <ul>
+        <li>Style guide</li>
+        <li>Instruction</li>
+        <li>Changelog</li>
+        <li>Licenses</li>
+        <li>Link in bio</li>
+        <li>Error 404</li>
+        <li>Password protected</li>
+      </ul>
+    </div>
+
+    <div class="footer-center">
+      <div><img src="images/Group 123 (1).svg" /> <h2 class="footer-brand"> Medifit</h2></div>
+      <p>We provide the ultimate solution<br />for your online store and all the<br />healthcare needs.</p>
+      <div class="social-icons">
+        <img src="images/Group 13.svg" alt="Facebook" />
+        <img src="images/Group 14.svg" alt="Instagram" />
+        <img src="images/Group 16.svg" alt="Twitter" />
+        <img src="images/Group 15.svg" alt="YouTube" />
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Address</h4>
+      <p>1640 Parker Rd, Allentown,<br />New Mexico 31134</p>
+
+      <h4>Contact</h4>
+      <p>📧 hello@gmail.com<br />📞 (209) 555-0104</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Design by Webestica, Powered by Webflow</p>
+  </div>
+</footer>
+
+</body>
+</html>

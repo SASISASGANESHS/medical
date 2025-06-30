@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #eeede7;
+  width: 1920px;
+  color: #503217;
+  line-height: 1.6;
+}
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+  background-color: #eeede7;
+}
+
+.header {
+  background-color: #eeede7;
+  padding: 29px 310px;
+  display: flex;
+  width: 1920px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+}
+
+.brand-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #503217;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 403.14px;
+  height: 26px;
+  top: 32px;
+  left: 744px;
+  padding: 20px 0;
+  justify-content: center;
+}
+.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+  width: 52px;
+  height: 26px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #503217;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav-link1 {
+  width: 43px;
+  height: 26px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #503217;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav-link2 {
+  width: 52px;
+  height: 26px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #503217;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav-link3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 67px;
+  height: 26px;
+  color: #503217;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #f5dec5;
+}
+.nav-link1:hover {
+  color: #f5dec5;
+}
+.nav-link2:hover {
+  color: #f5dec5;
+}
+.nav-link3:hover {
+  color: #f5dec5;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-icon {
+  width: 18.75px;
+  height: 18.75px;
+  top: 3.13px;
+  left: 3.13px;
+  border: 1.5px;
+  cursor: pointer;
+}
+.cart-icon {
+  width: 25px;
+  height: 25px;
+  top: 33px;
+  cursor: pointer;
+}
+
+.search-icon:hover,
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.cart-container {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #503217;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-weight: 400;
+}
+.hero-section {
+  background-color: #e8e6de;
+  padding: 156px 310px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+  height: 908.89px;
+  width: 1920px;
+  left: 0px;
+}
+
+.hero-content {
+  flex: 1;
+  width: 599px;
+  height: 453px;
+  top: 288px;
+  left: 315px;
+  gap: 60px;
+}
+
+.hero-title {
+  font-family: "Poppins", sans-serif;
+  width: 541px;
+  height: 273px;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 110%;
+  color: #503217;
+}
+
+.hero-description {
+  width: 415px;
+  height: 52px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #8f7d6a;
+  margin-top: 30px;
+}
+
+.cta-button {
+  background-color: #503217;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 158px;
+  height: 48px;
+  cursor: pointer;
+
+  top: 10p;
+  margin-top: 30px;
+}
+
+.cta-button:hover {
+  background-color: #6c543e;
+  transform: translateY(-2px);
+}
+
+.hero-visual {
+  flex: 1;
+  position: relative;
+  height: 716.42px;
+}
+
+.health-section {
+  padding: 40px 0;
+}
+
+.health-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.wrapper h2 {
+  color: #000000;
+
+  font-weight: 500;
+  line-height: 120px;
+  size: 70px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.img1 {
+  width: 332px;
+  height: 438px;
+}
+
+.img2 {
+  width: 552px;
+  height: 581px;
+}
+
+.img3 {
+  width: 333px;
+  height: 362px;
+}
+
+.nothing {
+  width: 1320px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.about-section {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-heading {
+  padding-left: 38px;
+  width: 271px;
+  height: 70px;
+  font-size: 50px !important;
+  font-weight: bold;
+}
+
+.about-text {
+  padding-left: 95px;
+  width: 920px;
+  height: 144px;
+  line-height: 120%;
+  font-size: 40px;
+  line-height: 1.6;
+  max-width: 1000px;
+}
+
+.ccct {
+  position: relative;
+  left: 310px;
+  top: 13px;
+  width: 1071px;
+  height: 116px;
+}
+.doo {
+  width: 100%;
+
+  padding: 50px 100px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* ✅ Center the image */
+}
+
+.right-box img {
+  width: 1300px; /* You can adjust if needed */
+  height: auto;
+}
+.footer {
+  background-color: #f9f9f9;
+  border-color: #e8e6de;
+  padding: 60px 310px 30px;
+  color: #333;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 40px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #000;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+
+  font-size: 15px;
+  color: #503217;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1.5;
+}
+
+.footer-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #503217;
+  margin-bottom: 15px;
+}
+
+.footer-center p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #503217;
+  font-weight: 500;
+  size: 18px;
+  text-decoration: underline;
+  border-top: 1px solid #eee;
+}
